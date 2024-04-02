@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 0.2em;
+  width: 180px;
+  color: #ffff;
+  font-weight: 300;
+  background-color: #2c1140;
+  border: 1px solid #2c1140;
+}
+
+.button:active {
+  filter: brightness(150%) blur(1px);
+  transition: filter 0.3s ease;
+}
+
+.button:hover {
+  border: 1px solid #c496e5;
+  background-color: #130220;
+  transition: transform 0.3s ease;
+}
+
+.button:hover svg {
+  transition: transform 0.3s ease;
+  transform: rotate(45deg);
+}

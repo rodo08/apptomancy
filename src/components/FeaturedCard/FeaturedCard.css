@@ -1,0 +1,64 @@
+article {
+  padding-top: 2.5rem;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  max-width: 1000px;
+}
+
+.card-meanings fieldset {
+  padding: 1rem;
+  border: 1px solid #b89662;
+  border-radius: 0.8rem;
+  height: 383px;
+  overflow-y: scroll;
+}
+
+.featured-card-header p {
+  height: 64px;
+}
+
+.featured-card-header h1 {
+  border-bottom: 1px solid #b89662;
+  margin: 0 0 2rem 0;
+  font-size: 3rem;
+  font-family: "Emilys Candy", serif;
+  color: #0a2722;
+}
+
+.random-card-img {
+  width: auto;
+  mix-blend-mode: multiply;
+  /*filter: grayscale(0.5) sepia(0.5) hue-rotate(270deg) saturate(5);*/
+}
+
+.card-meanings h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-meanings h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-meanings p {
+  margin-top: 0.5rem;
+}
+
+/* .card-meanings fieldset {
+  border-radius: 1rem;
+  border: 1px solid #cab89c;
+  background-color: bisque;
+} */
+
+.featured-card-buttons {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

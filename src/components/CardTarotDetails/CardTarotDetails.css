@@ -1,0 +1,28 @@
+summary {
+  list-style-type: none;
+  max-width: 90%;
+  font-weight: bold;
+  color: #2c1140;
+}
+
+summary::after {
+  content: "➕";
+  cursor: pointer;
+  padding: 0 0 0 5px;
+}
+
+details[open] summary::after {
+  content: "➖";
+  cursor: pointer;
+}
+
+.card-details {
+  article {
+    padding: 0.5rem;
+  }
+  fieldset {
+    background-color: #f7ebd6;
+    border-radius: 1rem;
+    border: 1px solid #b89662;
+  }
+}

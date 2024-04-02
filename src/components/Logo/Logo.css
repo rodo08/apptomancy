@@ -1,0 +1,9 @@
+img {
+  width: 180px;
+}
+
+img:hover {
+  cursor: pointer;
+  filter: brightness(150%) blur(1px);
+  transition: filter 0.3s ease;
+}
