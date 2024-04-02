@@ -58,7 +58,7 @@ const Read = () => {
   const onSubmitDealCards = (e) => {
     e.preventDefault();
     if (!inputValue) {
-      setInputError("Make an inquiry before pressing the button, genius!");
+      setInputError("Make an inquiry before pressing the button!");
       return;
     }
     setInputValue("");
