@@ -1,7 +1,7 @@
 import "../FeaturedCard/FeaturedCard.css";
 import tarot from "../../assets/cards/cards.js";
 import { useState } from "react";
-import { HomeIcon, RenewIcon } from "../../assets/icons/icons.jsx";
+import { HomeIcon, AnotherOneIcon } from "../../assets/icons/icons.jsx";
 import Button from "../Button/Button.jsx";
 import { useNavigate } from "react-router-dom";
 
@@ -39,10 +39,8 @@ const FeaturedCard = () => {
         </header>
 
         <aside className="card-meanings">
+          <h2>Meanings</h2>
           <fieldset>
-            <legend>
-              <h2>Meanings</h2>
-            </legend>
             <h3>Light:</h3>
             <p>{currentCard.meanings.light.join(". ")}.</p>
 
@@ -53,7 +51,11 @@ const FeaturedCard = () => {
 
         <ul className="featured-card-buttons">
           <li>
-            <Button icon={RenewIcon} text={"New one"} onClick={handleNewCard} />
+            <Button
+              icon={AnotherOneIcon}
+              text={"New one"}
+              onClick={handleNewCard}
+            />
           </li>
           <li>
             <Button icon={HomeIcon} text={"Home"} onClick={handleHome} />
