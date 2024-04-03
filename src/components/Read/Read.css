@@ -1,98 +1,68 @@
 .main {
   display: grid;
   justify-content: center;
-  grid-template-columns: calc(60% - 1px - 4rem) 1px calc(40% - 4rem);
-  justify-items: center;
-  height: 100dvh;
-  padding: 1rem 16rem;
-  position: relative;
-  gap: 4rem;
-  figcaption {
-    padding: 1rem 0 0 0;
-  }
+  grid-template-columns: 47% 6% 35%;
+  max-width: 1480px;
+  padding: 1rem 0;
+  margin: 0 auto;
 }
 
 .card-draw {
-  width: 100%;
-}
-
-.card-draw-form {
   display: flex;
   flex-direction: column;
   form {
-    position: relative;
     display: flex;
-    width: 100%;
     gap: 1rem;
-    padding: 1.5rem 0 1.8rem 0;
-    input {
-      width: 100%;
-      border: 1px solid #b9bbb1;
-      border-radius: 0.5rem;
-      padding-left: 0.5rem;
-    }
-    & input::placeholder {
-      opacity: 0.5;
-    }
+    padding: 1rem 0;
+  }
+  input {
+    width: 100%;
+    position: relative;
+    border: 1px solid #e6d9c3;
+    border-radius: 0.5rem;
+    padding: 0 0 0 0.5rem;
   }
 }
 
-.read-separator {
-  height: 100%;
-  width: 1px;
-  background-color: #2c1140;
-}
-
-.card-draw-form-list img {
-  width: 90%;
-  mix-blend-mode: multiply;
-  margin: 0 auto;
+.inquiry {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ffedcf;
 }
 
 .card-draw-form-list ul {
   display: flex;
-  figcaption {
+  justify-content: center;
+  span {
     text-align: center;
   }
-}
-
-.list-buttons {
-  display: flex;
-  padding: 3rem 0 0 0;
-  gap: 1rem;
+  img {
+    border-radius: 0.5rem;
+    mix-blend-mode: multiply;
+  }
 }
 
 .previous-cards {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  position: fixed;
-  right: 16rem;
-  top: 1rem;
-  width: calc(40% - 16rem - 14px);
+  gap: 1rem;
 }
 
-.previous-cards-history ul {
+.list-buttons {
   display: flex;
-  padding-bottom: 0.5rem;
-  li figure,
-  li figcaption {
-    margin: 0 auto;
-    width: 70%;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
-}
 
-.card-draw-form-list ul li figure img,
-.previous-cards-history ul li figure img {
-  border-radius: 0.5rem;
-}
-
-/* CardTarot.jsx */
-.card-tarot-small {
-  margin: 0 auto;
-  width: 50%;
-}
-/*---------------------*/
-.gray-button {
-  background-color: gray;
+  .card-draw-form-list-details {
+    padding: 0 0;
+  }
 }

@@ -113,17 +113,20 @@ const Read = () => {
             <form onSubmit={onSubmitDealCards}>
               <input
                 type="text"
+                maxLength="100"
                 placeholder="Write your question"
                 value={inputValue}
                 onChange={onChangeInput}
+                style={{ position: "relative" }}
               />
               <p
                 style={{
-                  color: "grey",
+                  color: "violet",
                   position: "absolute",
-                  bottom: "-6px",
                   fontSize: "14px",
                   fontWeight: "inherit",
+                  top: "6.5rem",
+                  padding: "0 0 0 0.5rem",
                 }}
               >
                 {inputError}
@@ -137,7 +140,7 @@ const Read = () => {
             cardSize={""}
             setCardDetails={setCardDetails}
           />
-          {Object.values(cardDetails).length > 0 && (
+          {Object.values(cardDetails).length > 0 ? (
             <section className="card-draw-form-list-details">
               <article>
                 <CardTarotDetails
@@ -150,6 +153,21 @@ const Read = () => {
                 />
               </article>
             </section>
+          ) : (
+            <section className="card-draw-form-list-details">
+              <article>
+                <CardTarotDetails
+                  className={"card-details"}
+                  title={"Select a drawn card"}
+                  description={[
+                    "Here you'll see card's fortune telling features..",
+                  ]}
+                  keywords={["Here you'll see drawn card keywords.."]}
+                  light={["Here you'll see drawn card light meanings.."]}
+                  shadow={["Here you'll see drawn card shadow meanings.."]}
+                />
+              </article>
+            </section>
           )}
         </div>
         <div className="read-separator"></div>
@@ -157,9 +175,11 @@ const Read = () => {
           <h1>Previous cards</h1>
           {historyCards.map((item, index) => (
             <aside key={index} className="previous-cards-history">
-              <p>
-                Inquiry: <Question question={item.question} />
-              </p>
+              <fieldset className="inquiry">
+                <p>
+                  Inquiry: <Question question={item.question} />
+                </p>
+              </fieldset>
               <ListTarotCards
                 cards={item.cards}
                 setCardDetails={setCardDetails}
