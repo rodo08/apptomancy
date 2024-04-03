@@ -33,7 +33,6 @@ article {
 .random-card-img {
   width: auto;
   mix-blend-mode: multiply;
-  /*filter: grayscale(0.5) sepia(0.5) hue-rotate(270deg) saturate(5);*/
 }
 
 .card-meanings h2 {

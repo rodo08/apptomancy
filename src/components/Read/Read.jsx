@@ -187,12 +187,12 @@ const Read = () => {
             </aside>
           ))}
           <div className="list-buttons">
-            <Button icon={HomeIcon} text={"Home"} onClick={handleHome} />
             <Button
               icon={AnotherOneIcon}
-              text={"Clear & Restart"}
+              text={"Restart"}
               onClick={handleQuestion}
             />
+            <Button icon={HomeIcon} text={"Home"} onClick={handleHome} />
           </div>
         </div>
       </main>
