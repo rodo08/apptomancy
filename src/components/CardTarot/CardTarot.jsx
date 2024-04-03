@@ -21,6 +21,7 @@ export const CardTarot = ({ img, title, size, onClick }) => {
               fontSize: "0.8rem",
               fontWeight: "inherit",
               width: "100%",
+              top: "0.3rem",
             }}
           >
             {title}

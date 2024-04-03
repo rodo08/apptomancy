@@ -33,9 +33,17 @@
   background-color: #ffedcf;
 }
 
-.card-draw-form-list ul {
+.card-draw-form-list {
   display: flex;
   justify-content: center;
+}
+
+.card-draw-form-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+  padding: 1rem;
   span {
     text-align: center;
   }
@@ -51,9 +59,21 @@
   gap: 1rem;
 }
 
+.previous-cards-history {
+  figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
 .list-buttons {
   display: flex;
   padding: 1rem 0;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -62,7 +82,21 @@
     padding: 1rem;
   }
 
+  .card-draw-form-list {
+    padding: 0 0 1rem 0;
+  }
+
   .card-draw-form-list-details {
-    padding: 0 0;
+    padding: 0 0 2rem 0;
+  }
+
+  .card-draw input {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card-draw input {
+    width: 50%;
   }
 }
