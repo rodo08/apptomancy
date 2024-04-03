@@ -2,19 +2,16 @@ import "./CardTarotDetails.css";
 
 export const CardTarotDetails = ({
   title,
-  description,
+  description = [],
   className,
-  keywords,
-  light,
-  shadow,
+  keywords = [],
+  light = [],
+  shadow = [],
 }) => {
-  if (!title || !description || !keywords) {
-    return null; // No renderizar si alguno de los propiedades falta
-  }
   return (
     <div className="card-details">
       <h1>{title}</h1>
-      <p>{description.join(". ") + "."}</p>
+      <p>{description?.join(". ") + "."}</p>
       <fieldset>
         <article>
           <details>
@@ -23,9 +20,9 @@ export const CardTarotDetails = ({
             <summary className={className}>Read </summary>
             <h2>Meanings:</h2>
             <h3>Light</h3>
-            <p>{light.join(". ") + "."}</p>
+            <p>{light?.join(". ") + "."}</p>
             <h3>Shadow</h3>
-            <p>{shadow.join(". ") + "."}</p>
+            <p>{shadow?.join(". ") + "."}</p>
           </details>
         </article>
       </fieldset>
