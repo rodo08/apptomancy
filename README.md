@@ -34,3 +34,7 @@ Welcome to Apptomancy: Tarot, an interactive tarot card application.
 -   HTML
 -   CSS
 -   React JS
+
+## Apptomancy: Tarot link
+
+[Apptomancy: Tarot](https://apptomancy.netlify.app/)
