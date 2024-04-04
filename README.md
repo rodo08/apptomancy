@@ -33,4 +33,4 @@ Welcome to Apptomancy: Tarot, an interactive tarot card application.
 
 -   HTML
 -   CSS
--   React
+-   React JS
