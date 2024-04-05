@@ -66,6 +66,12 @@ article {
 @media screen and (max-width: 810px) {
   .container {
     grid-template-columns: 1fr;
+    figure {
+      width: 80%;
+    }
+    h1 {
+      font-size: 2rem;
+    }
   }
 
   .container section {

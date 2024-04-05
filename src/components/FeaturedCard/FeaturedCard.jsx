@@ -20,6 +20,11 @@ const FeaturedCard = () => {
   const handleNewCard = () => {
     const randomNumber = Math.floor(Math.random() * cardsArray.length);
     setCurrentCard(cardsArray[randomNumber]);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (

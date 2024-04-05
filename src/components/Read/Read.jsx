@@ -102,6 +102,12 @@ const Read = () => {
     );
     setCards(Array.from({ length: 3 }, () => ({ img: defaultImage })));
     setIsSubmit("submit");
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
