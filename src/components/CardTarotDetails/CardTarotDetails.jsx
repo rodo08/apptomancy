@@ -8,6 +8,14 @@ export const CardTarotDetails = ({
   light = [],
   shadow = [],
 }) => {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="card-details">
       <h1>{title}</h1>
@@ -23,6 +31,11 @@ export const CardTarotDetails = ({
             <p>{light?.join(". ") + "."}</p>
             <h3>Shadow</h3>
             <p>{shadow?.join(". ") + "."}</p>
+            <div>
+              <button className="go-top" onClick={handleClick}>
+                Go top ☝
+              </button>
+            </div>
           </details>
         </article>
       </fieldset>

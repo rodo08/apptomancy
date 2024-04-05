@@ -11,6 +11,11 @@ summary::after {
   padding: 0 0 0 5px;
 }
 
+details div {
+  display: flex;
+  justify-content: flex-end;
+}
+
 details[open] summary::after {
   content: "➖";
   cursor: pointer;
@@ -25,4 +30,15 @@ details[open] summary::after {
     border-radius: 1rem;
     border: 1px solid #b89662;
   }
+}
+
+.go-top {
+  background: none;
+  border: none;
+  color: #2c1140;
+  padding: 0.5rem;
+  transition: filter 0.3s ease;
+}
+.go-top:hover {
+  color: #b89662;
 }

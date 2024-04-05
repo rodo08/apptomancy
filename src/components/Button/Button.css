@@ -11,6 +11,19 @@
   border: 1px solid #2c1140;
 }
 
+.button-go-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 0.2em;
+  width: 170px;
+  color: #ffff;
+  font-weight: 300;
+  background-color: #2c1140;
+  border: 1px solid #2c1140;
+}
+
 .button:active {
   filter: brightness(150%) blur(1px);
   transition: filter 0.3s ease;
